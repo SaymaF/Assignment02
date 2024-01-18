@@ -506,6 +506,33 @@ footer hr{
     .destination-place{
         width: 100%;
     }
+
+
+
+
+
+    /* footer */
+    .foot-p{
+        width: 287px;
+        margin-bottom: 16px;
+    }
+    footer .foot-logo{
+        padding-top: 32px;
+    }
+    .foot-icons{
+        margin-bottom: 24px;
+    }
+    footer hr{
+        width: 335px;
+        margin-bottom: 24px;
+    }
+    .foot-copy{
+        font-size: 14px;
+        font-weight: 300;
+        padding-bottom: 32px;
+    
+    }
+
 }
 
 
