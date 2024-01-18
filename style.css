@@ -11,14 +11,15 @@ body{
     padding-left: 136px;
     padding-right: 136px;
 }
-:root{
+/* :root{
     --dark-color: rgba(66, 66, 71, 1)
-}
+} */
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 50px 0;
 }
 
 .logo-section{
@@ -36,6 +37,11 @@ nav{
     font-size: 36px;
     font-weight: 800;
 }
+.title-light{
+    color: #FF5400;
+}
+
+
 .title{
     color: #131318;
     text-align: center;
@@ -43,9 +49,7 @@ nav{
     font-weight: 800;
     padding-bottom: 24px;
 }
-.title-light{
-    color: #FF5400;
-}
+
 
 .nav-items > ul{
     display: flex;
@@ -66,7 +70,11 @@ nav{
     color: #FF5400;
     font-weight: 700;
 }
+.nav-ham{
+    display: none;
+}
 /* nav section ended */
+
 /* Banner section started */
 .banner{
     background-image: url(Images/banner1.png);
@@ -131,6 +139,7 @@ nav{
 }
 /* banner section ended */
 
+
 /* popular tour section started */
 .tour{
     display: flex;
@@ -139,7 +148,7 @@ nav{
     margin-top: 100px;
     text-align: justify;
 }
-.tour-text{
+.tour-texts{
     width: 40%;
 }
 .text{
@@ -150,7 +159,7 @@ nav{
     padding-bottom: 24px;
 }
 .text li{
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 .tour-btn{
     margin-top: 32px;
@@ -166,9 +175,9 @@ nav{
 .tour-img{
     width: 60%;
 }
+/* tour part ended */
 
-
-
+/* destination part started */
 .destination-p{
     width: 643px;
     margin-left: auto;
@@ -375,6 +384,130 @@ footer hr{
     padding-bottom: 100px;
 
 }
+
+/* nav responsiveness */
+@media screen and (max-width:600px) {
+    body{
+    /* margin: 0 100px; */
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        padding:0 20px;
+    }
+    .nav-ham{
+        display: block;
+    }
+    nav{
+        padding: 20px 0;
+    }
+    .logo{
+        width: 29px;
+        height: 33px;
+        margin: 0;
+    }
+    .logo-title{
+        font-size: 21.543px;
+    }
+    .nav-items > ul{
+        display: none;
+    }
+    
+    
+    /* nav responsiveness ended */
+
+    /* banner responsiveness stared */
+
+    .banner-overly{
+        padding: 32px 15px;
+    }
+    .banner-heading{
+        font-size: 22px;
+    }
+    .banner-text{
+        font-size: 14px;
+        line-height: 21px; /* 162.5% */
+        padding: 0 15px;
+    }
+
+    .banner-input{
+        display: block;
+        background: rgba(255, 255, 255, 0.30);
+        border-radius: 8px;
+        width: min-content;
+        /* border-radius: 5px; */
+        /* width: min-content; */
+    
+    }
+    .banner input{
+        min-width: 255px;
+        height: 52px;
+        padding: 0;
+        margin-bottom: 16px;
+        /* padding: 16px; */
+    
+    }
+    .banner select{
+        margin-bottom: 16px;
+        width: 255px;
+        height: 52px;
+        padding: 0;
+    }
+    .banner-btn{
+        width: 100%;
+        gap: 1px;
+    }
+    .tour-btn{
+        margin-top: 0px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 8px;
+        background: #FF5400;
+        padding: 16px 75px;
+    }
+    /* banner responsiveness ended */
+
+    /* tour responsiveness started */
+    .tour{
+        display: block;
+        width: 100%;
+        margin-top: 100px;
+        text-align: justify;
+    }
+    .tour button{
+        margin-top: 8px;
+    }
+    .tour-texts{
+        width: 100%;
+    }
+    .text{
+        color: rgba(19, 19, 24, 0.70);
+        font-size: 14px;
+        line-height: 24px; /* 162.5% */
+        padding-bottom: 8px;
+    }
+    .tour-img{
+        margin-top: 24px;
+        width: 100%;
+    }
+    /* tour part ended */
+
+    /* destination responsiveness started */
+    .destination-p{
+        width: 309px;
+    }
+    .destination-part{
+        display: block;
+        padding-bottom: 0px;
+    }
+    .destination-images{
+        width: 335px;
+    }
+    .destination-place{
+        width: 100%;
+    }
+}
+
 
 
 
